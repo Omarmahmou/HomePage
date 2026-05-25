@@ -96,6 +96,26 @@
   align-items: center;
 }
 
+.lang-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #fafafa;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.lang-text {
+  letter-spacing: 1.5px;
+}
+
+.lang-arrow {
+  display: flex;
+  align-items: center;
+}
+
 .cta-btn {
   font-family: "Montserrat", sans-serif;
   background-color: var(--primary-color);
