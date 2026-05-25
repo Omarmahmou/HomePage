@@ -96,14 +96,6 @@
   align-items: center;
 }
 
-.lang-selector {
-  color: #fff;
-  font-size: 13px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
 .cta-btn {
   font-family: "Montserrat", sans-serif;
   background-color: var(--primary-color);

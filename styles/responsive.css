@@ -305,10 +305,10 @@
 
   /* footer section */
   .footer-grid {
-    grid-template-columns: 1fr; /* عمود واحد منسدل بالكامل فوق بعضه */
+    grid-template-columns: 1fr;
     gap: 35px;
   }
   .subscribe-form {
-    max-width: 100%; /* يأخذ العرض كامل لتسهيل الكتابة */
+    max-width: 100%;
   }
 }
