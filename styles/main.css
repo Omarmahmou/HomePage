@@ -1,0 +1,80 @@
+@import url(/styles/Navbar.css);
+@import url(/styles/heroSection.css);
+@import url(/styles/productsSection.css);
+@import url(/styles/gallerySection.css);
+@import url(/styles/shopSection.css);
+@import url(/styles/aboutSection.css);
+@import url(/styles/inspireSection.css);
+@import url(/styles/viewSection.css);
+@import url(/styles/articlesSection.css);
+@import url(/styles//contactSection.css);
+@import url(/styles/footer.css);
+
+:root {
+  --primary-color: #f0d29f;
+  --secondary-color: #121211;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/*  */
+
+.lang-selector {
+  position: relative;
+  display: inline-block;
+  font-family: sans-serif;
+}
+
+/* الزر */
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+/* القائمة */
+.lang-menu {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background: #222;
+  border-radius: 6px;
+  padding: 5px 0;
+  list-style: none;
+  margin: 0;
+  min-width: 80px;
+
+  display: none;
+  z-index: 999;
+}
+
+.lang-menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.lang-menu li:hover {
+  background: #333;
+}
+
+/* فتح القائمة */
+.lang-selector.active .lang-menu {
+  display: block;
+}
