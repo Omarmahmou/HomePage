@@ -1,3 +1,21 @@
+@media (max-width: 1400px) {
+  .hero {
+    grid-template-columns: 55% 45%;
+  }
+
+  .left {
+    padding: 120px 60px 60px;
+  }
+
+  .left h1 {
+    font-size: 75px;
+  }
+
+  .slide-title {
+    font-size: 65px;
+  }
+}
+
 @media (max-width: 998px) {
   /* header section */
 
@@ -77,30 +95,37 @@
 
   /* hero section */
 
-  .btns {
-    justify-content: center;
-  }
-
   .hero {
     grid-template-columns: 1fr;
   }
 
-  .right {
-    display: none;
+  .left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 25px;
   }
 
-  .left {
-    padding: 40px 25px;
+  
+
+  .left .desc {
+    max-width: 500px;
+    width: 100%;
+    font-size: 17px;
+  }
+
+  .btns {
+    justify-content: center;
   }
 
   .left h1 {
     font-size: 55px;
+    line-height: 60px;
   }
-
-  .desc {
-    font-size: 17px;
+  .right {
+    display: none;
   }
-
   /* product section */
   .products__slider--rotate {
     transform: rotate(0);
@@ -115,6 +140,23 @@
   /* gallery section */
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .shop-image {
+    display: none;
+  }
+  .shop-text {
+    aspect-ratio: unset;
+    padding: 48px 32px;
+    min-height: 320px;
+  }
+  .shop-title {
+    font-size: 29px;
+  }
+
+  /* inspire section */
+  .inspire-content {
+    grid-template-columns: 1fr 1fr;
   }
 
   .center-big {
@@ -143,24 +185,26 @@
   }
 }
 
+@media (max-width: 998px) and (min-width: 700px) {
+  .small {
+    height: 520px;
+  }
+
+  .shop-wrapper {
+    width: 100%;
+    display: block;
+  }
+}
 @media (max-width: 768px) {
   /* shop section */
   .shop-wrapper {
     grid-template-columns: 1fr;
   }
 
-  .shop-image {
+  /* .shop-image {
     display: none;
-  }
+  } */
 
-  .shop-text {
-    aspect-ratio: unset;
-    padding: 48px 32px;
-    min-height: 320px;
-  }
-  .shop-title {
-    font-size: 29px;
-  }
   /* about section */
   .about {
     padding: 50px 0;
@@ -185,9 +229,9 @@
     font-size: 16px;
   }
   /* inspire section */
-  .inspire-content {
+  /* .inspire-content {
     grid-template-columns: 1fr 1fr;
-  }
+  } */
   /* articles section */
   .swiper-slide {
     width: 85vw;
@@ -218,7 +262,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   /* gallery section */
   .gallery-grid {
     grid-template-columns: 1fr;
